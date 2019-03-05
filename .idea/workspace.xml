@@ -36,8 +36,8 @@
       <file leaf-file-name="Solution.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/longestSubstringWithoutRepeatingCharaters/Solution.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8309859">
-              <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.07042254">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -629,12 +629,12 @@
       <created>1551758211177</created>
       <option name="number" value="Default" />
       <updated>1551758211177</updated>
-      <workItem from="1551758212747" duration="4823000" />
+      <workItem from="1551758212747" duration="5322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4823000" />
+    <option name="totallyTimeSpent" value="5322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="827" extended-state="6" />
@@ -682,8 +682,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/longestSubstringWithoutRepeatingCharaters/Solution.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8309859">
-          <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.07042254">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
