@@ -28,7 +28,11 @@
         }
 
 
-# 滑动窗口
+# 方法2 滑动窗口
+
+### 简介
+
+滑动窗口是数组字符串中常用的抽象概念,通常是数组字符串中由开始和结束索引定义的一系列元素的集合,[i,j),左闭右开.而滑动窗口是可以将两边的边界像某一方向滑动的窗口.例如[i,j)向着右边移动一个元素,则它将变成[i+1,j+1).
 
         public class Solution {
             public int lengthOfLongestSubstring(String s) {
@@ -49,7 +53,7 @@
             }
         }
 
-# 优化的滑动窗口
+# 方法3 优化的滑动窗口
 
         public class Solution {
             public int lengthOfLongestSubstring(String s) {
