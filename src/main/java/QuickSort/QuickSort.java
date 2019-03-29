@@ -19,16 +19,16 @@ public class QuickSort {
                 j--;
             }
             //j找到第一个比key小的值,i和j交换值
-            swap(arr,i,j);
+            swap(arr, i, j);
             while (arr[i].compareTo(key) <= 0 && i < j) {
                 i++;
             }
             //i找到第一个比key大的值,i和j交换值
-            swap(arr,i,j);
+            swap(arr, i, j);
         }
         //开始递归
-        sort(arr,left,i);
-        sort(arr,i+1,right);
+        sort(arr, left, i);
+        sort(arr, i + 1, right);
     }
 
     public static <T> void swap(T[] arr, int i, int j) {
@@ -38,12 +38,11 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        Integer[] arr={1,2,325,52,34,5346,23,23,56,74,34,634,74,34};
+        Integer[] arr = {1, 2, 325, 52, 34, 5346, 23, 23, 56, 74, 34, 634, 74, 34};
         Joiner joiner = Joiner.on(",");
         System.out.println(joiner.join(arr));
-        sort(arr,0,arr.length-1);
+        sort(arr, 0, arr.length - 1);
         System.out.println(joiner.join(arr));
-
     }
 
 }
