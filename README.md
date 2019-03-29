@@ -7,6 +7,6 @@
 - [QuickSort](./src/main/java/QuickSort)
 - [Shuffle](./src/main/java/Shuffle)
 - [MedianOfTwoSortedArrays](./src/main/java/MedianOfTwoSortedArrays)
-- [MedianOfTwoSortedArrays](./src/main/java/MedianOfTwoSortedArrays)
+- [longestSubstringWithoutRepeatingCharaters](./src/main/java/longestSubstringWithoutRepeatingCharaters)
 - [LongestPalindromicSubstring](./src/main/java/LongestPalindromicSubstring)
 - [ByteDance](./src/main/java/ByteDance)
