@@ -1,6 +1,6 @@
 package QuickSort;
 
-import com.google.common.base.Joiner;
+
 
 /**
  * Created by ymk on 2019/3/29.
@@ -39,10 +39,7 @@ public class QuickSort {
 
     public static void main(String[] args) {
         Integer[] arr = {1, 2, 325, 52, 34, 5346, 23, 23, 56, 74, 34, 634, 74, 34};
-        Joiner joiner = Joiner.on(",");
-        System.out.println(joiner.join(arr));
         sort(arr, 0, arr.length - 1);
-        System.out.println(joiner.join(arr));
     }
 
 }

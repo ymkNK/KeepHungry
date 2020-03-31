@@ -1,8 +1,7 @@
 package Shuffle;
 
-import com.google.common.base.Joiner;
-import com.google.common.collect.Interner;
-import com.sun.org.apache.bcel.internal.generic.SWAP;
+
+
 
 import java.util.*;
 
@@ -31,14 +30,9 @@ public class FisherYates {
     public static void main(String[] args) {
         Integer[] raw = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
         List<Integer> pokers = Arrays.asList(raw);
-        Joiner joiner = Joiner.on(",");
-        System.out.println(joiner.join(pokers));
         Collections.shuffle(pokers);
-        System.out.println(joiner.join(pokers));
-
         Integer[] newRaw = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
-        System.out.println(joiner.join(newRaw));
         byMyWayFisherYates(newRaw);
-        System.out.println(joiner.join(newRaw));
+
     }
 }
