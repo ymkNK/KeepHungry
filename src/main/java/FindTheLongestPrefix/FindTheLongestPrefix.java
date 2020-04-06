@@ -1,6 +1,5 @@
 package FindTheLongestPrefix;
 
-import org.graalvm.util.CollectionsUtil;
 
 import java.util.Collections;
 

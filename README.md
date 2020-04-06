@@ -17,3 +17,5 @@
 - [PourWater](./src/main/java/PourWater)
 - [LongestSubstringWithoutRepeating](./src/main/java/LongestSubstringWithoutRepeating)
 - [FindTheLongestPrefix](./src/main/java/FindTheLongestPrefix)
+- [CheckInClusion](./src/main/java/CheckInClusion)
+- [check in clusion](./src/main/java/check in clusion)
