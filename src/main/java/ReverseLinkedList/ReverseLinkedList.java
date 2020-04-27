@@ -10,9 +10,9 @@ public class ReverseLinkedList {
     public ListNode reverseList(ListNode head) {
         ListNode current = head;
         ListNode result = null;
-        while (current.next != null) {
+        while (current != null) {
             ListNode listNode = new ListNode(current.val);
-            listNode.next=result;
+            listNode.next = result;
             result = listNode;
             current = current.next;
         }
