@@ -55,7 +55,7 @@ task :new do
         FileUtils.touch(@readme_name)
         open(@readme_name, 'a') do |file|
             file.puts "# #{@date} #{@name}"
-            file.puts ""
+            file.puts "![地址]()"
             file.puts ""
             file.puts "## 原理"
             file.puts ""
