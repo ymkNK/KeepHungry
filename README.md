@@ -22,3 +22,4 @@
 - [ReverseLinkedList](./src/main/java/ReverseLinkedList)
 - [KthSmallestInLexicograghicalOrder](./src/main/java/KthSmallestInLexicograghicalOrder)
 - [TwoSum](./src/main/java/TwoSum)
+- [trapping-rain-water](./src/main/java/TrappingRainWater)
