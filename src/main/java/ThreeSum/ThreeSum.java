@@ -6,7 +6,7 @@ import java.util.*;
 * Created by ymkNK on 2020-05-06.
 */
 public class ThreeSum {
-    public List<List<Integer>> threeSum(int[] nums) {
+    public List<List<Integer>> threeSumMy(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         HashMap<Integer, Integer> numMap = new HashMap<>();
         // 存下有多少数，同时也存下每一个数字出现的频率
