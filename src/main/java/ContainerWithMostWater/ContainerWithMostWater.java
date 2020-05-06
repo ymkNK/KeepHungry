@@ -18,6 +18,23 @@ public class ContainerWithMostWater {
         return result;
     }
 
+    public int maxAreaByDoublePointer(int[] height) {
+        int result = 0;
+        int l = 0, r = height.length - 1;
+        while (l < r) {
+            int h = Math.min(height[l], height[r]);
+            int w = r - l;
+            result = Math.max(h * w, result);
+
+            if (height[l] < height[r]) {
+                l++;
+            } else {
+                r--;
+            }
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
 
 
