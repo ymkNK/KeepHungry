@@ -24,3 +24,4 @@
 - [TwoSum](./src/main/java/TwoSum)
 - [trapping-rain-water](./src/main/java/TrappingRainWater)
 - [MergeTwoSortedList](./src/main/java/MergeTwoSortedList)
+- [ThreeSum](./src/main/java/ThreeSum)
