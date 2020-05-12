@@ -18,7 +18,7 @@
 - [LongestSubstringWithoutRepeating](./src/main/java/LongestSubstringWithoutRepeating)
 - [FindTheLongestPrefix](./src/main/java/FindTheLongestPrefix)
 - [CheckInClusion](./src/main/java/CheckInClusion)
-- [check in clusion](./src/main/java/check in clusion)
+- [CheckInClusion](./src/main/java/CheckInClusion)
 - [ReverseLinkedList](./src/main/java/ReverseLinkedList)
 - [KthSmallestInLexicograghicalOrder](./src/main/java/KthSmallestInLexicograghicalOrder)
 - [TwoSum](./src/main/java/TwoSum)
