@@ -18,10 +18,16 @@
 - [LongestSubstringWithoutRepeating](./src/main/java/LongestSubstringWithoutRepeating)
 - [FindTheLongestPrefix](./src/main/java/FindTheLongestPrefix)
 - [CheckInClusion](./src/main/java/CheckInClusion)
-- [check in clusion](./src/main/java/check in clusion)
+- [CheckInClusion](./src/main/java/CheckInClusion)
 - [ReverseLinkedList](./src/main/java/ReverseLinkedList)
 - [KthSmallestInLexicograghicalOrder](./src/main/java/KthSmallestInLexicograghicalOrder)
 - [TwoSum](./src/main/java/TwoSum)
 - [trapping-rain-water](./src/main/java/TrappingRainWater)
 - [MergeTwoSortedList](./src/main/java/MergeTwoSortedList)
+<<<<<<< HEAD
 - [MaximumSubarray](./src/main/java/MaximumSubarray)
+=======
+- [ThreeSum](./src/main/java/ThreeSum)
+- [ContainerWithMostWater](./src/main/java/ContainerWithMostWater)
+- [LruCache](./src/main/java/LruCache)
+>>>>>>> a73abb61aee1a1cfa5425b4618ba01779f20deba
