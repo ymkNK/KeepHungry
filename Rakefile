@@ -20,12 +20,15 @@ end
 
 desc "创建新LeetCode练习"
 task :new do
-    puts "Please input the exercise name："
+
+    puts "请输入练习中文名："
+    @chineseName = STDIN.gets.chomp
+    puts "Please input the exercise English name："
     @name = STDIN.gets.chomp
     @date = Time.now.strftime("%F")
 
     # 需要检查一下对应练习的目录是否存在
-    @directory_url = "./src/main/java/#{@name}"
+    @directory_url = "./src/main/java/#{@chineseName}"
     if File.directory?(@directory_url)
         puts "The directory: #{@directory_url} has existed."
     else
