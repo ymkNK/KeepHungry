@@ -41,7 +41,7 @@ task :new do
     File.open("README.md", 'r') do |f|
         f.each_line{|line| t_file.puts line}
     end
-    t_file.puts "- [#{@name}](#{@directory_url})"
+    t_file.puts "- [#{@chineseName}](#{@directory_url})"
     t_file.close
     FileUtils.mv(t_file.path, "README.md")
 
