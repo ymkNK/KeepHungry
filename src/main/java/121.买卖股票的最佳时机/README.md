@@ -10,5 +10,20 @@
 
 ## 原理
 
+### 自我思考
+滑动窗口，两个指针同时遍历，但是需要先入手的价格必须低于出手的价格
 
-## 结论
+### 方式一 暴力解答
+
+```
+   int benefit = 0;
+        for (int i = 0; i < prices.length; i++) {
+            for (int j = i; j < prices.length; j++) {
+                int tempMoney = prices[j] - prices[i];
+                benefit = Math.max(tempMoney, benefit);
+            }
+        }
+        return benefit;
+```
+
+### 方式二 滑动窗口
