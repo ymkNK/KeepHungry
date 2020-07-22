@@ -75,7 +75,7 @@ task :new do
         # 创建java文件
         FileUtils.touch(@java_name)
         open(@java_name, 'a') do |file|
-            file.puts "package #{@name};"
+            file.puts "package #{@directory_url};"
             file.puts ""
             file.puts "/**"
             file.puts "* Created by ymkNK on #{@date}."
