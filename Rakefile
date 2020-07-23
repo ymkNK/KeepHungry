@@ -28,7 +28,7 @@ task :new do
     @date = Time.now.strftime("%F")
 
     # 需要检查一下对应练习的目录是否存在
-    @directory_url = "./src/main/java/#{@chineseName}"
+    @directory_url = "./src/main/java/#{@name}"
     if File.directory?(@directory_url)
         puts "The directory: #{@directory_url} has existed."
     else
@@ -57,7 +57,7 @@ task :new do
         # 创建readme文件
         FileUtils.touch(@readme_name)
         open(@readme_name, 'a') do |file|
-            file.puts "# #{@date} #{@name}"
+            file.puts "# #{@date} #{@chineseName} #{@name}"
             file.puts "[地址]()"
             file.puts ""
             file.puts "## 原理"
@@ -75,7 +75,7 @@ task :new do
         # 创建java文件
         FileUtils.touch(@java_name)
         open(@java_name, 'a') do |file|
-            file.puts "package #{@directory_url};"
+            file.puts "package #{@name};"
             file.puts ""
             file.puts "/**"
             file.puts "* Created by ymkNK on #{@date}."
