@@ -29,4 +29,4 @@
 - [ContainerWithMostWater](./src/main/java/ContainerWithMostWater)
 - [LruCache](./src/main/java/LruCache)
 - [BestTimeToBuyAndSellStock](./src/main/java/121.买卖股票的最佳时机)
-- [33.搜索旋转排序数组](./src/main/java/33.搜索旋转排序数组)
+- [33.搜索旋转排序数组](./src/main/java/SearchInRotatedSortedArray)
