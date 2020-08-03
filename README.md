@@ -1,7 +1,7 @@
 # KeepHungry
 ## 前言
 
-一些代码的练习与实现,主要内容都在src当中
+一些leetCode代码的练习与实现,主要内容都在src当中
 
 ## Rake
 使用rake new 快速生产练习用文件，同时更新目录的内容
