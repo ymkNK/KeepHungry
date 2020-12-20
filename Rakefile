@@ -20,7 +20,10 @@ end
 
 desc "创建新LeetCode练习"
 task :new do
-    puts "Please input the exercise name："
+
+    puts "请输入练习中文名："
+    @chineseName = STDIN.gets.chomp
+    puts "Please input the exercise English name："
     @name = STDIN.gets.chomp
     @date = Time.now.strftime("%F")
 
@@ -38,7 +41,7 @@ task :new do
     File.open("README.md", 'r') do |f|
         f.each_line{|line| t_file.puts line}
     end
-    t_file.puts "- [#{@name}](#{@directory_url})"
+    t_file.puts "- [#{@chineseName}](#{@directory_url})"
     t_file.close
     FileUtils.mv(t_file.path, "README.md")
 
@@ -54,7 +57,7 @@ task :new do
         # 创建readme文件
         FileUtils.touch(@readme_name)
         open(@readme_name, 'a') do |file|
-            file.puts "# #{@date} #{@name}"
+            file.puts "# #{@date} #{@chineseName} #{@name}"
             file.puts "[地址]()"
             file.puts ""
             file.puts "## 原理"

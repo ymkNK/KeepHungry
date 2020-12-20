@@ -1,13 +1,9 @@
 package LruCache;
 
-import javax.xml.transform.Source;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * Created by ymkNK on 2020-05-06.
- */
 public class LRUCache {
 
     private int capacity;
