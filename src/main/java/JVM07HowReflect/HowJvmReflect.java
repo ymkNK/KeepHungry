@@ -22,6 +22,8 @@ public class HowJvmReflect {
             declaredField.setAccessible(true);
             System.out.println("Test:" + declaredField.getName() + "=" + declaredField.get(test));
         }
+
+
     }
 
 
