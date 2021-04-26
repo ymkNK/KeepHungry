@@ -33,9 +33,36 @@ public class HowJvmReflect {
 
     }
 
+    /**
+     * Created by ymk.
+     * 反射耗时的例子
+     **/
+    public static void case2() throws InvocationTargetException, NoSuchMethodException, IllegalAccessException {
+        System.out.println("===case 2===");
+        Test test = new Test();
+        int invokeTimes = 100000;
+        long startTime = System.currentTimeMillis();
+        for (int i = 0; i < invokeTimes; i++) {
+            test.testPublic();
+        }
+        long publicConsumeTime = System.currentTimeMillis() - startTime;
 
-    public static void main(String[] args) throws IllegalAccessException, InvocationTargetException {
+        Method privateMethod = Test.class.getDeclaredMethod("testPrivate");
+        privateMethod.setAccessible(true);
+        startTime = System.currentTimeMillis();
+        for (int i = 0; i < invokeTimes; i++) {
+            test.testPublic();
+            privateMethod.invoke(test);
+        }
+        long privateConsumeTime = System.currentTimeMillis() - startTime;
+
+        System.out.println("直接调用耗时:" + publicConsumeTime + "ms");
+        System.out.println("反射调用耗时:" + privateConsumeTime + "ms");
+    }
+
+
+    public static void main(String[] args) throws Exception {
         case1();
-
+        case2();
     }
 }

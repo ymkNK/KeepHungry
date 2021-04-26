@@ -7,6 +7,10 @@ public class Test {
     private void testPrivate() {
         System.out.println("this is a private method in Test.class");
     }
+    public void testPublic(){
+        System.out.println("this is a public method in Test.class");
+    }
 
     private int privateValue = 1;
+
 }
