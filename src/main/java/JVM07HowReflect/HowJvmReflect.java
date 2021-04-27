@@ -23,19 +23,19 @@ public class HowJvmReflect {
      **/
     public static void testcase1() throws IllegalAccessException, InvocationTargetException {
         System.out.println("===case 1===");
-        Test test = new Test();
+        CustomTest customTest = new CustomTest();
 //        test.testPrivate();
 //        System.out.println(test.privateValue);
 
-        Class<Test> testClass = Test.class;
+        Class<CustomTest> testClass = CustomTest.class;
 
         for (Field declaredField : testClass.getDeclaredFields()) {
             declaredField.setAccessible(true);
-            System.out.println("Test:" + declaredField.getName() + "=" + declaredField.get(test));
+            System.out.println("Test:" + declaredField.getName() + "=" + declaredField.get(customTest));
         }
         for (Method declaredMethod : testClass.getDeclaredMethods()) {
             declaredMethod.setAccessible(true);
-            declaredMethod.invoke(test);
+            declaredMethod.invoke(customTest);
         }
 
     }
@@ -46,20 +46,20 @@ public class HowJvmReflect {
      **/
     public static void testcase2() throws InvocationTargetException, NoSuchMethodException, IllegalAccessException {
         System.out.println("===case 2===");
-        Test test = new Test();
+        CustomTest customTest = new CustomTest();
         int invokeTimes = 100000;
         long startTime = System.currentTimeMillis();
         for (int i = 0; i < invokeTimes; i++) {
-            test.testPublic();
+            customTest.testPublic();
         }
         long publicConsumeTime = System.currentTimeMillis() - startTime;
 
-        Method privateMethod = Test.class.getDeclaredMethod("testPrivate");
+        Method privateMethod = CustomTest.class.getDeclaredMethod("testPrivate");
         privateMethod.setAccessible(true);
         startTime = System.currentTimeMillis();
         for (int i = 0; i < invokeTimes; i++) {
-            test.testPublic();
-            privateMethod.invoke(test);
+            customTest.testPublic();
+            privateMethod.invoke(customTest);
         }
         long privateConsumeTime = System.currentTimeMillis() - startTime;
 
@@ -70,10 +70,11 @@ public class HowJvmReflect {
     public static void showEmptyLine() {
         System.out.println("\n");
     }
+
     public static void showMenu() {
         System.out.println("===Please select a function to test===\n" +
-                        "Type the number of test.\n" +
-                        "Type 'exit' to exit.");
+                "Type the number of test.\n" +
+                "Type 'exit' to exit.");
     }
 
     public static void showExit() {
